@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="#ffffff"/>
+  <text x="60" y="70" fill="#0f172a" font-size="34" font-weight="700">WhatsApp Support Bot</text>
+  <text x="60" y="102" fill="#64748b" font-size="18">Request flow</text>
+  <g font-size="17" text-anchor="middle">
+    <rect x="60" y="270" width="170" height="80" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="145" y="304" font-weight="600" fill="#14532d">Customer</text>
+    <text x="145" y="328" fill="#166534" font-size="14">WhatsApp app</text>
+
+    <rect x="300" y="270" width="190" height="80" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+    <text x="395" y="304" font-weight="600" fill="#164e63">Meta Cloud API</text>
+    <text x="395" y="328" fill="#155e75" font-size="14">Graph API v21</text>
+
+    <rect x="560" y="150" width="590" height="420" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-dasharray="6 5"/>
+    <text x="580" y="178" text-anchor="start" fill="#475569" font-size="14" font-weight="600" letter-spacing="2">FASTAPI SERVICE (DOCKER)</text>
+
+    <rect x="590" y="200" width="230" height="80" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    <text x="705" y="234" font-weight="600" fill="#1e3a8a">POST /webhook</text>
+    <text x="705" y="258" fill="#1e40af" font-size="14">signature check · dedupe</text>
+
+    <rect x="590" y="330" width="230" height="80" rx="10" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    <text x="705" y="364" font-weight="600" fill="#4c1d95">Bot state machine</text>
+    <text x="705" y="388" fill="#5b21b6" font-size="14">menu · order · handoff</text>
+
+    <rect x="890" y="330" width="230" height="80" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    <text x="1005" y="364" font-weight="600" fill="#7c2d12">SQLAlchemy</text>
+    <text x="1005" y="388" fill="#9a3412" font-size="14">conversations · orders</text>
+
+    <rect x="890" y="200" width="230" height="80" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="1005" y="234" font-weight="600" fill="#14532d">Background send</text>
+    <text x="1005" y="258" fill="#166534" font-size="14">httpx → Graph API</text>
+
+    <rect x="590" y="460" width="530" height="80" rx="10" fill="#fefce8" stroke="#ca8a04" stroke-width="2"/>
+    <text x="855" y="494" font-weight="600" fill="#713f12">Admin API</text>
+    <text x="855" y="518" fill="#854d0e" font-size="14">PUT /api/orders · GET /api/conversations · POST reply (human agent)</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)">
+    <path d="M230 310 H300"/>
+    <path d="M490 300 C540 300 540 240 590 240"/>
+    <path d="M705 280 V330"/>
+    <path d="M820 370 H890"/>
+    <path d="M760 330 C800 300 850 240 890 240"/>
+    <path d="M1005 200 C1005 120 395 120 395 270"/>
+    <path d="M855 460 V410" />
+  </g>
+  <text x="690" y="132" fill="#64748b" font-size="14">reply</text>
+  <text x="60" y="630" fill="#94a3b8" font-size="15">Muzaffar Ali Hakim · Open-source FastAPI project · GitHub</text>
+</svg>
